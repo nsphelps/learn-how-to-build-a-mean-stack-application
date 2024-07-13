@@ -15,8 +15,9 @@ RUN npm install
 
 # Bundle app source
 COPY . .
+
 # Expose port 3000 outside container
 EXPOSE 3000
 
 # Command used to start application
-CMD ["node", "server/server.js"]
+CMD npm run start
